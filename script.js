@@ -104,106 +104,125 @@ restartbutton1.addEventListener('click', function() {
 botao1.addEventListener('click', verificadorPalavra1);
 function verificadorPalavra1() {
     var palavra1 = removeAccentsAndLowercase(letra1.value) + removeAccentsAndLowercase(letra2.value) + removeAccentsAndLowercase(letra3.value) + removeAccentsAndLowercase(letra4.value) + removeAccentsAndLowercase(letra5.value);
-    letra1.readOnly = true;
-    letra2.readOnly = true;
-    letra3.readOnly = true;
-    letra4.readOnly = true;
-    letra5.readOnly = true;
-    if (palavra1 === palavra_certa) { // caso acerte a palavra
-        colorize(letra1, letra2, letra3, letra4, letra5);
-        openModalBtn.click();
+    if (verificadorExistencia(palavra1) === false) {
+        return;
     } else {
-        colorize(letra1, letra2, letra3, letra4, letra5);
-        letra6.readOnly = false;
-        letra7.readOnly = false;
-        letra8.readOnly = false;
-        letra9.readOnly = false;
-        letra10.readOnly = false;
+        letra1.readOnly = true;
+        letra2.readOnly = true;
+        letra3.readOnly = true;
+        letra4.readOnly = true;
+        letra5.readOnly = true;
+        if (palavra1 === palavra_certa) { // caso acerte a palavra
+            colorize(letra1, letra2, letra3, letra4, letra5);
+            openModalBtn.click();
+        } else {
+            colorize(letra1, letra2, letra3, letra4, letra5);
+            letra6.readOnly = false;
+            letra7.readOnly = false;
+            letra8.readOnly = false;
+            letra9.readOnly = false;
+            letra10.readOnly = false;
+        }
     }
 }
 
 botao2.addEventListener('click', verificadorPalavra2);
 function verificadorPalavra2() {
     var palavra2 = removeAccentsAndLowercase(letra6.value) + removeAccentsAndLowercase(letra7.value) + removeAccentsAndLowercase(letra8.value) + removeAccentsAndLowercase(letra9.value) + removeAccentsAndLowercase(letra10.value);
-    letra6.readOnly = true;
-    letra7.readOnly = true;
-    letra8.readOnly = true;
-    letra9.readOnly = true;
-    letra10.readOnly = true;
-    if (palavra2 === palavra_certa) { // caso acerte a palavra
-        colorize(letra6, letra7, letra8, letra9, letra10);
-        openModalBtn.click();
+    if (verificadorExistencia(palavra2) === false) {
+        return;
     } else {
-        colorize(letra6, letra7, letra8, letra9, letra10);
-        letra11.readOnly = false;
-        letra12.readOnly = false;
-        letra13.readOnly = false;
-        letra14.readOnly = false;
-        letra15.readOnly = false;
+        letra6.readOnly = true;
+        letra7.readOnly = true;
+        letra8.readOnly = true;
+        letra9.readOnly = true;
+        letra10.readOnly = true;
+        if (palavra2 === palavra_certa) { // caso acerte a palavra
+            colorize(letra6, letra7, letra8, letra9, letra10);
+            openModalBtn.click();
+        } else {
+            colorize(letra6, letra7, letra8, letra9, letra10);
+            letra11.readOnly = false;
+            letra12.readOnly = false;
+            letra13.readOnly = false;
+            letra14.readOnly = false;
+            letra15.readOnly = false;
+        }
     }
 }
 
 botao3.addEventListener('click', verificadorPalavra3);
 function verificadorPalavra3() {
     var palavra3 = removeAccentsAndLowercase(letra11.value) + removeAccentsAndLowercase(letra12.value) + removeAccentsAndLowercase(letra13.value) + removeAccentsAndLowercase(letra14.value) + removeAccentsAndLowercase(letra15.value);
-    letra11.readOnly = true;
-    letra12.readOnly = true;
-    letra13.readOnly = true;
-    letra14.readOnly = true;
-    letra15.readOnly = true;
-    if (palavra3 === palavra_certa) { // caso acerte a palavra
-        colorize(letra11, letra12, letra13, letra14, letra15);
-        openModalBtn.click();
+    if (verificadorExistencia(palavra3) === false) {
+        return;
     } else {
-        colorize(letra11, letra12, letra13, letra14, letra15);
-        letra16.readOnly = false;
-        letra17.readOnly = false;
-        letra18.readOnly = false;
-        letra19.readOnly = false;
-        letra20.readOnly = false;
+        letra11.readOnly = true;
+        letra12.readOnly = true;
+        letra13.readOnly = true;
+        letra14.readOnly = true;
+        letra15.readOnly = true;
+        if (palavra3 === palavra_certa) { // caso acerte a palavra
+            colorize(letra11, letra12, letra13, letra14, letra15);
+            openModalBtn.click();
+        } else {
+            colorize(letra11, letra12, letra13, letra14, letra15);
+            letra16.readOnly = false;
+            letra17.readOnly = false;
+            letra18.readOnly = false;
+            letra19.readOnly = false;
+            letra20.readOnly = false;
+        }
     }
 }
 
 botao4.addEventListener('click', verificadorPalavra4);
 function verificadorPalavra4() {
     var palavra4 = removeAccentsAndLowercase(letra16.value) + removeAccentsAndLowercase(letra17.value) + removeAccentsAndLowercase(letra18.value) + removeAccentsAndLowercase(letra19.value) + removeAccentsAndLowercase(letra20.value);
-    letra16.readOnly = true;
-    letra17.readOnly = true;
-    letra18.readOnly = true;
-    letra19.readOnly = true;
-    letra20.readOnly = true;
-    if (palavra4 === palavra_certa) { // caso acerte a palavra
-        colorize(letra16, letra17, letra18, letra19, letra20);
-        openModalBtn.click();
+    if (verificadorExistencia(palavra4) === false) {
+        return;
     } else {
-        colorize(letra16, letra17, letra18, letra19, letra20);
-        letra21.readOnly = false;
-        letra22.readOnly = false;
-        letra23.readOnly = false;
-        letra24.readOnly = false;
-        letra25.readOnly = false;
+        letra16.readOnly = true;
+        letra17.readOnly = true;
+        letra18.readOnly = true;
+        letra19.readOnly = true;
+        letra20.readOnly = true;
+        if (palavra4 === palavra_certa) { // caso acerte a palavra
+            colorize(letra16, letra17, letra18, letra19, letra20);
+            openModalBtn.click();
+        } else {
+            colorize(letra16, letra17, letra18, letra19, letra20);
+            letra21.readOnly = false;
+            letra22.readOnly = false;
+            letra23.readOnly = false;
+            letra24.readOnly = false;
+            letra25.readOnly = false;
+        }
     }
 }
 
 botao5.addEventListener('click', verificadorPalavra5);
 function verificadorPalavra5() {
     var palavra5 = removeAccentsAndLowercase(letra21.value) + removeAccentsAndLowercase(letra22.value) + removeAccentsAndLowercase(letra23.value) + removeAccentsAndLowercase(letra24.value) + removeAccentsAndLowercase(letra25.value);
-    letra21.readOnly = true;
-    letra22.readOnly = true;
-    letra23.readOnly = true;
-    letra24.readOnly = true;
-    letra25.readOnly = true;
-    if (palavra5 === palavra_certa) { // caso acerte a palavra
-        colorize(letra21, letra22, letra23, letra24, letra25);
-        openModalBtn.click();
+    if (verificadorExistencia(palavra5) === false) {
+        return;
     } else {
-        colorize(letra21, letra22, letra23, letra24, letra25);
-        openModalBtn1.click();
+        letra21.readOnly = true;
+        letra22.readOnly = true;
+        letra23.readOnly = true;
+        letra24.readOnly = true;
+        letra25.readOnly = true;
+        if (palavra5 === palavra_certa) { // caso acerte a palavra
+            colorize(letra21, letra22, letra23, letra24, letra25);
+            openModalBtn.click();
+        } else {
+            colorize(letra21, letra22, letra23, letra24, letra25);
+            openModalBtn1.click();
+        }
     }
 }
 
-function verificadorExistencia (l1, l2, l3, l4, l5) {
-    var palavra = removeAccentsAndLowercase(l1.value) + removeAccentsAndLowercase(l2.value) + removeAccentsAndLowercase(l3.value) + removeAccentsAndLowercase(l4.value) + removeAccentsAndLowercase(l5.value);
+function verificadorExistencia (palavra) {
     if (words.includes(palavra)) {
         return true;
     } else {
