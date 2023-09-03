@@ -92,3 +92,12 @@ button:hover {
 .openModalBtn {
     display: none;
 }
+
+.resposta {
+    font-size: 20px;
+    color: #f00e6c;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
